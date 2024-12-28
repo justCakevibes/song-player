@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small html project for music player</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h1 class="head">Audio Player</h1>
+    <hr>
+    <p>Today's track by Atif Aslam :</p> <h3 style="display: inline;"><span><p>"Meri Kahani"</p></span></h3>
+
+    <audio controls autoplay  >
+        <source src="./files for the audio/Meri Kahani - (Raag.Fm).mp3">
+    </audio>
+<br>
+<br>
+
+    <button id="show-button">Click to Show lyrics</button>
+    <div id="hidden-content">
+        <p>Jhula jhulaiy yai panghat nadiya kinaray
+            Yai angan nindiya tu ana
+            Hawa kay sang mujhko bhi tu dekhana
+            Apnay rang suno meray dil janiya
+            Kahani mani ek din mairay sang yai jahan
+            Tan maira kuch aur tera bhi arma
+            Janey dil main kia kuch yai basa tha
+            Yai maire hai kahani
+            Yai maire kahani......<br><br>
+
+            Yeh meri hai kahani
+            Yeh meri kahani<br><br>
+            
+            Jhula jhulaiy yai panghat nadiya kinaray
+            Yai angan nindiya tu ana
+            Hawa kay sang mujhko bhi tu dekhana
+            Apnay rang tera maira galiyon main yai phirna
+            Phirtay phirtay raton ko yai thakna
+            Thak kay nani ki godi main sona
+            Pariyon kay dais ja kay na ana
+            Yai maire hai kahani
+            Yai maire kahani......<br><br>
+
+            Yeh meri hai kahani
+            Yeh meri kahani<br><br>
+            
+            Koi fikar the na koi bahana
+            Muthe main tha jaisay zamana
+            Kache zaban main wo geet gana
+            Naiy khelonay sab ko dekhana
+            Mang liya zindagi se zaiyada
+            Chin gaya wo jis ne kiya wada
+            Kon laiy wo pal jo suhanay
+            Betay thay jo wo guzray zamanay
+            Yai maire hai kahani
+            Yai maire hai kahani......<br><br>
+
+            Yeh meri hai kahani
+            Yeh meri kahani<br><br>
+        </p>
+    </div>
+
+
+    <script>
+        // JavaScript to toggle visibility
+        const button = document.getElementById('show-button');
+        const content = document.getElementById('hidden-content');
+
+        button.addEventListener('click', () => {
+            // Toggle between hiding and showing the content
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                button.textContent = 'Click to Hide';
+            } else {
+                content.style.display = 'none';
+                button.textContent = 'Click to Show';
+            }
+        });
+    </script>
+
+</body>
+</html>
